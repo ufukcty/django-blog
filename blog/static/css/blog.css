@@ -1,0 +1,17 @@
+.card-body{
+    height:500px;
+}
+.card-title{
+    color:red ;
+}
+.card-link{
+    color:white;
+}
+
+.btn btn-info{
+    color:white;
+}
+
+#delete-button{
+    float:right;
+}

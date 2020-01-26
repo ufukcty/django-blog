@@ -1,0 +1,21 @@
+{% extends 'base/blog.html' %}
+{% block content %}
+{% for post in posts %}
+    <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+          <a href="{% url 'post_detail' pk=post.pk %}">
+            <h2 class="post-title">
+              {{ post.title }}
+            </h2>
+            <h3 class="post-subtitle">
+             {{ post.text|linebreaksbr }}
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Ufuk</a>
+             {{ post.published_date }}</p>
+        </div>
+        <hr>
+    </div>
+ {% endfor %}
+{% endblock %}
